@@ -1,4 +1,3 @@
-<!-- Version professionnelle améliorée du CV d'Ayman avec effet machine à écrire -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -24,7 +23,6 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
 
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Ayman<span class="text-primary">Dev</span></a>
@@ -43,7 +41,6 @@
         </div>
     </nav>
 
-    <!-- HERO -->
     <header id="home" class="vh-100 d-flex align-items-center text-center">
         <div class="container">
             <img src="photo.jpg" class="profile-img shadow-lg mb-3" alt="Photo profil">
@@ -56,7 +53,6 @@
         </div>
     </header>
 
-    <!-- ABOUT -->
     <section id="about">
         <div class="container">
             <div class="row g-5">
@@ -85,7 +81,6 @@
         </div>
     </section>
 
-    <!-- PARCOURS -->
     <section id="parcours" class="bg-light">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Mon Parcours</h2>
@@ -108,7 +103,6 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO -->
     <section id="portfolio">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Mes Projets</h2>
@@ -117,7 +111,7 @@
                     <div class="card project-card border-0 shadow-sm rounded-4">
                         <img src="photo1.png" alt="Site Games" class="card-img-top">
                         <div class="card-body text-center">
-                            <h5 class="fw-bold">Site Games (E‑commerce)</h5>
+                            <h5 class="fw-bold">Site Games (E-commerce)</h5>
                             <p class="card-text">Boutique en ligne spécialisée dans les jeux. Projet réalisé avec un design clair.</p>
                             <span class="badge bg-secondary">PHP</span>
                             <span class="badge bg-secondary">MySQL</span>
@@ -131,7 +125,6 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="bg-light">
         <div class="container">
             <h2 class="text-center fw-bold mb-4">Contact</h2>
@@ -144,7 +137,6 @@
                             <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ayman-achakkaj-582120373/" target="_blank">linkedin.com/in/ayman-achakkaj-582120373</a></p>
                             <p><strong>Loisirs:</strong> Football, Voyager</p>
                             <p><strong>Permis :</strong> <i class="fas fa-car text-primary me-2"></i> Permis de conduire (Voiture B)</p>
-
                         </div>
                     </div>
                 </div>
@@ -152,7 +144,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="text-white text-center py-4">
         <div class="container">
             <div class="mb-3">
@@ -162,12 +153,9 @@
         </div>
     </footer>
 
-    <!-- SCRIPTS -->
     <script>
-    // 1. Année dynamique
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // 2. Effet Machine à écrire
     const textElement = document.getElementById('typing-text');
     const texts = ["Développeur Web.", "Passionné de Design.", "Étudiant Motivé."];
     let count = 0;
@@ -186,7 +174,6 @@
         }
     })();
 
-    // 3. Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if(window.scrollY > 50){ navbar.classList.add('bg-dark','shadow'); }

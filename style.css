@@ -1,11 +1,9 @@
-/* Police Google */
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     scroll-behavior: smooth;
 }
 
-/* Image profil ronde et centrée */
 .profile-img {
     width: 200px;
     height: 200px;
@@ -16,19 +14,18 @@ body {
     margin: 0 auto;
 }
 
-/* Sections padding */
 section {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-/* Timeline points */
 .timeline-box {
     position: relative;
     background: #fff;
     padding: 15px;
     border-radius: 8px;
 }
+
 .timeline-box::before {
     content: '';
     position: absolute;
@@ -40,14 +37,15 @@ section {
     border-radius: 50%;
 }
 
-/* Portfolio cards hover */
 .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
 }
+
 .project-card img {
     height: 220px;
     object-fit: cover;
@@ -56,19 +54,16 @@ section {
     margin: 0 auto;
 }
 
-/* Navbar active */
 .navbar-nav .nav-link.active {
     color: #0d6efd !important;
     font-weight: 600;
 }
 
-/* Centrer portfolio */
 #portfolio .row {
     justify-content: center !important;
     text-align: center;
 }
 
-/* Footer */
 footer {
     background: #111;
     color: #fff;
